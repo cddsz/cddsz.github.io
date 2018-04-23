@@ -103,7 +103,7 @@ function porky(){
 	
 	/*Typed js*/
 	$("#typed").typed({
-		strings: [" Back Soon", " Stay Tuned", " Almost There"],
+		strings: [" 成都大数智", " 内部使用", " 非请勿入"],
 		typeSpeed: 100,
 		backDelay: 900,
 		loop: true,
@@ -115,7 +115,7 @@ function porky(){
 	
 	/*Typed js for title tag*/
 	$("#title").typed({
-		strings: ["Hello..!", "Welcome..!", "Enjoy..!"],
+		strings: ["你好", "欢迎来到成都大数智官网!", "祝你浏览愉快!"],
 		typeSpeed: 300,
 		backDelay: 900,
 		loop: true,

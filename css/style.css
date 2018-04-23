@@ -131,7 +131,19 @@ p, .address-detail a {
 
 .force-UTF-8 {
   content: "¡"; }
+p a {
+  color:blue;
+  font-family: '微软雅黑';
+  font-size: 1rem;
+}
+p a:hover {
+  color:red;
+  text-decoration: none; }
 
+p a:focus {
+  color: red;
+  text-decoration: none;
+  outline: none; }
 /****************************/
 /** Main **/
 /****************************/
