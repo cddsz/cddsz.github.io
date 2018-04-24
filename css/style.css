@@ -126,6 +126,7 @@ p, .address-detail a {
   p.lead, .address-detail a.lead {
     font-size: 18px;
     line-height: 30px;
+    font-family: '微软雅黑';
     font-weight: 400;
     margin-bottom: 0; }
 
