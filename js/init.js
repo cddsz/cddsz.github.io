@@ -180,6 +180,7 @@ function porky(){
 	});
 	
 	/* Map Initialization */
+	/*
 	if( $('#map_canvas').length > 0 ){	
 		var settings = {
 			zoom: 11,
@@ -381,6 +382,7 @@ function porky(){
 				infowindow.open(map,companyMarker);
 			});	
 		}
+		*/
 }
 /***** Porky function end *****/
 
