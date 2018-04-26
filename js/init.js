@@ -114,16 +114,16 @@ function porky(){
 	});
 	
 	/*Typed js for title tag*/
-	$("#title").typed({
-		strings: ["你好", "欢迎来到成都大数智官网!", "祝你浏览愉快!"],
-		typeSpeed: 300,
-		backDelay: 900,
-		loop: true,
-		cursorChar: "|",
-		contentType: 'html', // or text
-		// defaults to false for infinite loop
-		loopCount: false
-	});
+	// $("#title").typed({
+	// 	strings: ["你好", "欢迎来到成都大数智官网!", "祝你浏览愉快!"],
+	// 	typeSpeed: 300,
+	// 	backDelay: 900,
+	// 	loop: true,
+	// 	cursorChar: "|",
+	// 	contentType: 'html', // or text
+	// 	// defaults to false for infinite loop
+	// 	loopCount: false
+	// });
 	/*click functions*/
 	var target = $('#splitlayout');
 	$(".about div").on('click', function(){
