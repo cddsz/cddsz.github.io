@@ -1,573 +1,374 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title id="title">成都大数智科技有限公司</title>
-		<meta name="author" content="lijufneng"/>
-		
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		
-		<!--Fonts-->
-		<!-- <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Lora:400,400i,700,700i' rel='stylesheet' type='text/css'> -->
-		
-		<!--CSS-->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-	</head>
-	
-	<body data-ng-app="contactApp">
-	
-		<!--Preloader-->
-		<div class="preloader-it">
-			<div class="la-anim-1"></div>
-		</div>
-		<!--/Preloader-->
-		
-		<!--Container-->
-		<div class="pad-zero">
-			
-			<!--Splitlayout -->
-			<div id="splitlayout" class="splitlayout reset-layout">
-				
-				<!--Intro-->
-				<div class="intro">
-					
-					<!--Left Content Intro-->
-					<div class="side side-left text-center">
-						<!--Cloud-->
-						<div class="layer clouds">
-							<div class="cloud cloud-1">
-								<img src="img/cloud-1.png" width="1600" height="850" alt="">
-							</div>
-							
-							<div class="cloud cloud-2">
-								<img src="img/cloud-2.png" width="1600" height="850" alt="">
-							</div>
-							
-							<div class="cloud cloud-3">
-								<img src="img/cloud-1.png" width="1600" height="850" alt="">
-							</div>
-						</div>
-						<!--/Cloud-->
-						
-						<!--Left Nav-->
-						<div class="call-to-action about btn btn-circle btn-icon-anim">
-							<div>
-								<span class="goto-next">
-									<i class="icon-info"></i>
-								</span>
-								<span class="goto-close opacity-hide">
-									<i class="icon-close"></i>
-								</span>
-								
-							</div>	
-						</div>
-						<!--/Left Nav-->
-						
-						<!--Main Content-->
-						<section class="col-lg-9 col-md-10 col-sm-11 col-xs-11 content-wrap align-center sec-pad">
-							<div class="table-wrap">
-								<div class="table-cell vertical-align-middle">
-									<!--Logo-->
-									<header class="logo margin-bottom-25">
-										<img src="img/logo.png" alt="logo">
-									</header>
-									<!--/Logo-->
-									
-									<p class="secondery-font margin-bottom-25">成都大数智科技有限公司内部网络</p>
-									<div class="type-wrap hide-overflow margin-bottom-15">
-										<h1 class="animated"><span id="typed" ></span></h1>
-									</div>
-									<img class="inline-block margin-bottom-5" src="img/tree.png" alt="chrismas"/>
-									<span class="block secondery-font font-16 font-italic font-capitalize">中秋快乐</span>
-								</div>	
-							</div>	
-							<!--left overlay-->
-						</section>
-						
-						<!--Left overlay-->
-						<div class="side-left-overlay"></div>
-						<!--Left overlay-->
-						
-					</div>
-					<!--/Left Content Intro-->
-					
-					<!--Right Content Intro-->
-					<div class="side side-right text-center bg-pattern">
-						
-						<!--Right Nav-->
-						<div class="call-to-action contact btn btn-circle btn-icon-anim">
-							<div>
-								<span class="goto-next">
-									<i class="icon-envelope-open"></i>
-								</span>
-								<span class="goto-close opacity-hide">
-									<i class="icon-close"></i>
-								</span>
-								
-							</div>	
-						</div>
-						<!--/Right Nav-->
-						
-						<section class="col-lg-12 content-wrap sec-pad">
-							<div class="table-wrap">
-								<div class="table-cell vertical-align-middle">
-									<div class="main-content">
-										<!--main content-->
-										<section class="col-lg-8 col-md-8 col-sm-9 col-xs-11 intro-text hide-overflow align-center">
-											<div id="slide_out" class="relative">
-												<img class="inline-block margin-bottom-5" src="img/tree.png" alt="chrismas"/>
-												<!--Counter-->
-												<div id="countdown" class=" secondery-font font-16 font-italic margin-bottom-20">
-												  <span class="days">23</span>
-												  <span>天剩余</span>
-												</div>
-												<!--/Counter-->	
-												<h4 class="font-uppercase margin-top-35 margin-bottom-35"从未有过的独特的体验</h4>
-												<div class="clearfix"></div>
-												<div class="notify-btn main-menu">
-													<span class="btn btn-default">
-														<span class="mask"></span>
-														<span class="btn-label">
-															<b>通知我</b>
-														</span>
-													</span>
-												</div>
-											</div>	
-											<!--Notify Form-->
-											<section id="slide_in" class="text-center  notify-form-wrap relative hide-block hide-left-opac">
-												<a id="notify_close" class="close-notify margin-bottom-15 margin-lr-auto" href="#">
-													<div>
-														<span class="goto-close">
-															<i class="icon-close"></i>
-														</span>
-														
-													</div>	
-												</a>
-												
-												<!--CONTENT CHANGED & <br> ADDED-->								
-												<div class="notify-wrap">
-													<h4 class="wellcome-text margin-bottom-25" data-ng-bind="notify || 'hello'">Hello</h4>
-													<form id="notifyMe" class="contact-form"  action="notify-me.php" method="post">
-														<div class="input-wrap margin-bottom-25">
-															<input  data-ng-model="notify" class="col-lg-10  align-center form-control input input__field input__field--hoshi text-center" name="email" placeholder="email id"  type="email">
-															<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
-															
-														</div>	
-														
-														<button type="submit" data-hover="Send" class="btn btn-default progress-button btn-submit">
-														<span class="mask"></span>
-														<span class="btn-label">提交</span>
-														</button>
-													</form>
-												</div>
-											</section>
-											<!--/Notify Form-->
-										</section>
-										<!--/main content-->
-									</div>
-								</div>
-							</div>
-						</section>			
-						<div class="container-fluid pad-zero social-wrpper">
-														
-							<!--Footer-->
-							<footer class="copyright-text margin-sm-30 margin-top-xs-0">
-							
-								<!--Social Icons-->
-								<ul class="social-icons animated">
-									<li>
-										<a href="#" class="social-icon">
-											<span class="fa" data-hover="&#xf09a;">&#xf09a;</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="social-icon">
-											<span class="fa" data-hover="&#xf099;">&#xf099;</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="social-icon">
-											<span class="fa" data-hover="&#xf16e;">&#xf16e;</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="social-icon">
-											<span class="fa" data-hover="&#xf16d;">&#xf16d;</span>
-										</a>
-									</li>
-								</ul>
-								<!--/Social Icons-->
-								
-								<p>成都大数智科技有限公司 © 2018</p>
-							</footer>
-							<!--/Footer-->
-							
-						</div>	
-						
-						<!--Right overlay-->
-						<div class="side-right-overlay"></div>
-						<!--/Right overlay-->
-						
-					</div>
-					<!--/Right Content Intro-->
-					
-				</div>
-				<!--/Intro-->
-				
-				<!--Left Section-->
-				<div class="page page-left">
-					<div  class="page-inner full-height">
-					
-						<!--About Sec-->
-						<section class="container-fluid align-center text-left animated sec-pad-top sec-pad-bottom-xs about-sec">
-							<div class="row">
-								<div class="col-lg-12">
-									<h4 class="margin-bottom-25">链接</h4>
-									<p class="lead">这里放置了快速链接地址</p>
-									<div class="about-icon-wrap padding-top-60">
-										<div class="row">
-											<div class="col-md-3 col-xs-6 col-xxs-12  margin-bottom-45">
-												<span class="icon pe-7s-graph1"></span>
-												<h6 class="margin-top-25 margin-bottom-15">
-													OA &amp; etc.
-												</h6>
-												<p>
-													<a href="http://work.dashuzhi.cn:88" target="_blank">SharePoint 综合管理网站</a><br>
-													<a href="http://work.dashuzhi.cn:88/Lists/contact" target="_blank">常用联系人</a><br>
-													<a href="http://pms.dashuzhi.cn" target="_blank">PMS 项目管理</a><br>
-													<a href="http://wiki.dashuzhi.cn" target="_blank">WIKI</a>
-												</p>
-											</div>
-											<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
-												<span class="icon pe-7s-tools"></span>
-												<h6 class="margin-top-25 margin-bottom-15">
-													工作
-												</h6>
-												<p>
-													<a href="https://www.dashuzhi.cn:888" target="_blank">SVN</a><br>
-													<a href="http://git.dashuzhi.cn" target="_blank">GIT【新！】</a><br>
-													<a href="http://file.dashuzhi.cn" target="_blank">内部网盘：智盘【新！】</a>
-												</p>
-											</div>
-											<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
-												<span class="icon pe-7s-hourglass"></span>
-												<h6 class="margin-top-25 margin-bottom-15">
-													外网
-												</h6>
-												<p>
-													<a href="https://www.dashuzhi.cn:888" target="_blank">视频录制</a><br>
-													<a href="http://www.haoban.org" target="_blank">好办®</a><br>
-													<a href="http://www.goodzhua.com" target="_blank">鼓捣抓®</a><br>
-													<a href="http://www.zhuamm.com" target="_blank">抓MM®</a><br>
-													<a href="http://www.juror.pw" target="_blank">陪审员®</a><br>
-													<a href="http://www.592dx.com" target="_blank">我就爱电信®</a>
-												</p>
-											</div>
-											<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
-												<span class="icon pe-7s-graph3"></span>
-												<h6 class="margin-top-25 margin-bottom-15">
-													数据服务
-												</h6>
-												<p>
-													MySQL公网：www.haoban.org，端口3306
-												</p>
-												<p>
-													SQLServer公网：www.haoban.org，端口3307
-												</p>
-											</div>
-										</div>	
-									</div>	
-								</div>	
-							</div>
-						</section>
-						<!--/About Sec-->
-						
-						<!--Projects Sec-->
-						<section class="container-fluid align-center text-left animated sec-pad-top sec-pad-bottom-xs bg-pattern bg-attachment-fixed">
-							<div class="row">
-								<div class="col-lg-12">
-									<h4 class="margin-bottom-25">浏览器如何翻墙</h4>
-									<p class="lead">
-										1、将windows的语言和地区设置为“香港特别行政区”；<br>
-										2、下载opera最新版；<br>
-										3、将opera的“设置”-->“隐私和安全”中，将“启用VPN”勾上。
-									</p>
-									
-								</div>	
-							</div>
-							<div class="project-gal-wrap">
-								 <div class="project-gallery row" itemscope itemtype="http://schema.org/ImageGallery">
-									<figure class="col-md-4 col-xs-6 col-xxs-12 margin-bottom-45" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									  <a href="img/project1.jpg" itemprop="contentUrl" data-size="730x490">
-										  <img class="img-responsive" src="img/project1.jpg" itemprop="thumbnail" alt="Image description" />
-										  <div class="hover"><span>+</span></div>
-									  </a>
-										<figcaption itemprop="caption description">Landscape Photoshoot</figcaption>
+<html lang="zh-cn">
+<head>
+  <title>成都大数智科技有限公司</title>
 
-									</figure>
-									<figure class="col-md-4 col-xs-6 col-xxs-12 margin-bottom-45" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									  <a href="img/project2.jpg" itemprop="contentUrl" data-size="730x490">
-										  <img class="img-responsive" src="img/project2.jpg" itemprop="thumbnail" alt="Image description" />
-										  <div class="hover"><span>+</span></div>
-									  </a>
-										<figcaption itemprop="caption description">Coffee with porky</figcaption>
-									</figure>
-									<figure class="col-md-4 col-xs-6 col-xxs-12 margin-bottom-45" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-									  <a href="img/project3.jpg" itemprop="contentUrl" data-size="730x490">
-										  <img class="img-responsive" src="img/project3.jpg" itemprop="thumbnail" alt="Image description" />
-										  <div class="hover"><span>+</span></div>
-									  </a>
-										<figcaption itemprop="caption description">Girl next door</figcaption>
-									</figure>
-								</div>
-							</div>
-						</section>
-						<!--/Projects Sec-->
-						
-						<!--Team Sec-->
-						<section class="container-fluid align-center text-left animated sec-pad-top sec-pad-bottom-xs team-sec">
-							<div class="row">
-								<div class="col-lg-12">
-									<h4 class="margin-bottom-35">Our Wonderful Team</h4>
-									<div class="row">
-										<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
-											<img class="img-responsive" src="img/team1.jpg" alt="team"/>
-											<span class="team-per">john doe</span>
-											<span class="team-desn">Director</span>
-											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
-											<ul class="team-social margin-top-15">
-												<li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-behance"></i></a></li>
-											</ul>
-										</div>
-										<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
-											<img class="img-responsive" src="img/team2.jpg" alt="team"/>
-											<span class="team-per">max tailor</span>
-											<span class="team-desn">Administrator</span>
-											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
-											<ul class="team-social margin-top-15">
-												<li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-behance"></i></a></li>
-											</ul>
-										</div>
-										<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
-											<img class="img-responsive" src="img/team3.jpg" alt="team"/>
-											<span class="team-per">廖芯平</span>
-											<span class="team-desn">软件研发工程师</span>
-											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
-											<ul class="team-social margin-top-15">
-												<li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-behance"></i></a></li>
-											</ul>
-										</div>
-										<div class="col-md-3 col-xs-6 col-xxs-12 margin-bottom-45">
-											<img class="img-responsive" src="img/team4.jpg" alt="team"/>
-											<span class="team-per">Peter Fox</span>
-											<span class="team-desn">Graphic Designer</span>
-											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem consequat ipsum.</p>
-											<ul class="team-social margin-top-15">
-												<li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-												<li><a href="" target="_blank"><i class="fa fa-behance"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>	
-							</div>
-						</section>
-						<!--/Team Sec-->
-						
-						<!--Client Sec-->
-						<section class="client-sec container-fluid align-center text-left animated sec-pad bg-pattern bg-attachment-fixed">
-							<div class="row">
-								<div class="col-lg-12">
-									<h6 class="text-center margin-bottom-35">Our Clients</h6>
-									<div class="row">
-										<div class="col-md-2 col-xs-4 col-xxs-6">
-											<img class="img-responsive" src="img/client1.png" alt="client"/>
-										</div>
-										<div class="col-md-2 col-xs-4 col-xxs-6">
-											<img class="img-responsive" src="img/client2.png" alt="client"/>
-										</div>
-										<div class="col-md-2 col-xs-4 col-xxs-6">
-											<img class="img-responsive" src="img/client3.png" alt="client"/>
-										</div>
-										<div class="col-md-2 col-xs-4 col-xxs-6">
-											<img class="img-responsive" src="img/client4.png" alt="client"/>
-										</div>
-										<div class="col-md-2 col-xs-4 col-xxs-6">
-											<img class="img-responsive" src="img/client5.png" alt="client"/>
-										</div>
-										<div class="col-md-2 col-xs-4 col-xxs-6">
-											<img class="img-responsive" src="img/client6.png" alt="client"/>
-										</div>
-									</div>
-								</div>
-							</div>	
-						</section>
-						<!--/Client Sec-->
-						
-					</div>		
-				</div>
-				<!--/Left Section-->
-				
-				<!--Right Section-->
-				<div class="page page-right">
-					<div  class="page-inner full-height">
-						<!--form sec-->
-						<section data-ng-controller="ContactController" class="container-fluid align-center animated  sec-pad">
-							<h4 class="margin-bottom-25">Hey <span  data-ng-bind="formData.inputName||'There'" class="secondery-font font-italic weight-500">There</span>, happy to hear from you.</h4>
-							<div>
-								<form data-ng-submit="submit(contactform, $event)"  name="contactform"  method="post" class="row form-horizontal" role="form">
-									<div class="form-group input--hoshi col-sm-6" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-										<div class="input-wrap">
-											<input autocomplete="off" data-ng-model="formData.inputName" type="text" class="form-control input__field input input__field--hoshi" id="inputName" name="inputName" placeholder="Name" required>
-											<label class="input__label input__label input__label--hoshi input__label--hoshi-color-1 input__label--hoshi input__label--hoshi-color-1" ></label>
-										</div>	
-									</div>
-									<div class="form-group  input--hoshi col-sm-6" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-										<div class="input-wrap">
-											<input autocomplete="off" data-ng-model="formData.inputEmail" type="email" class="form-control input input__field input__field--hoshi" placeholder="Email" id="inputEmail" name="inputEmail" required>
-											<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
-										</div>	
-									</div>
-									<div class="form-group  input--hoshi col-sm-12" data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-										<div class="input-wrap">
-											<textarea data-ng-model="formData.inputMessage" class="form-control input input__field input__field--hoshi" rows="4" id="inputMessage" name="inputMessage" placeholder="message" required></textarea>
-											<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
-										</div>	
-									</div>
-									<div class="form-group col-sm-12">
-										<div class="align-center">
-											<button type="submit" class="btn btn-default" data-ng-disabled="submitButtonDisabled">
-											<span class="mask"></span>
-											<span class="btn-label">send</span>
-											</button>
-										</div>
-									</div>
-								</form>
-								<p data-ng-class="result">{{ resultMessage }}</p>
-							</div>
-							
-							<div class="row">
-								<div class="address-detail">
-									<div class="col-sm-4 margin-bottom-sm">
-											
-										<span>visit</span>
-										<p>350 Fifth Avenue, New York 10118.</p>
-									</div>	
-									<div class="col-sm-4 margin-bottom-sm">
-											
-										<span>reach</span>
-										<a href="mailto:hello@Hencework.com" target="_blank">inquiry@porky.com</a>
-									</div>
-									
-									<div class="col-sm-4 margin-bottom-sm">
-										
-										<span>call</span>
-										<a href="callto:954788315970" target="_blank">+95 (478) 831-5970</a>
-									</div>
-								</div>
-							</div>
-						</section>	
-						<!--/form sec-->
-					
-						<!--google map-->
-						<section class="map-sec">
-							<div id="map_canvas"></div>
-						</section>
-						<!--/google map-->
-					</div>
-				</div>
-				<!--/Right Section-->
-				
-			</div>
-			<!-- /Splitlayout -->
-		
-		</div>
-		<!-- /Container -->
-		
-		<!--PhotoSwipe Popup-->
-		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="pswp__bg"></div>
-			<div class="pswp__scroll-wrap">
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-				<div class="pswp__container">
-					<div class="pswp__item"></div>
-					<div class="pswp__item"></div>
-					<div class="pswp__item"></div>
-				</div>
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-				<div class="pswp__ui pswp__ui--hidden">
+</head>
 
-					<div class="pswp__top-bar">
+<body data-spy="scroll" data-offset="60" data-target=".nav__holder">
 
-						<div class="pswp__counter"></div>
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      "Loading..."
+    </div>
+  </div>
 
-						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+  <main class="main-wrapper">
 
-						<button class="pswp__button pswp__button--share" title="Share"></button>
+    <!-- Navigation -->
+    <header class="nav nav--sticky-on-mobile" id="home">
 
-						<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <div class="nav__holder" id="sticky-nav">
+        <div class="container">
+          <div class="flex-parent">
 
-						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <div class="nav__header clearfix">
+              <!-- Logo -->
+              <div class="logo-wrap local-scroll">
+                <a href="#home" class="logo__link">
+                  <img class="logo logo--dark" src="img/logo_dark.png" alt="logo">
+                </a>
+              </div>
 
-						<div class="pswp__preloader">
-							<div class="pswp__preloader__icn">
-							  <div class="pswp__preloader__cut">
-								<div class="pswp__preloader__donut"></div>
-							  </div>
-							</div>
-						</div>
-					</div>
+              <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="nav__icon-toggle-bar"></span>
+                <span class="nav__icon-toggle-bar"></span>
+                <span class="nav__icon-toggle-bar"></span>
+              </button>
+            </div> <!-- end nav-header -->
 
-					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-						<div class="pswp__share-tooltip"></div> 
-					</div>
 
-					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-					</button>
+            <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">              
+              <ul class="nav__menu nav__menu--inline local-scroll" id="onepage-nav">
+                <li class="nav__dropdown">
+                  <a href="index.html">首页</a>
+                  <i class="ui-arrow-down nav__dropdown-trigger"></i>
+                  <ul class="nav__dropdown-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="index-app.html">手机APP</a></li>
+                    <li><a href="index-wx.html">触摸屏</a></li>
+                    <li><a href="index-other.html">微信</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#features">Features</a>
+                </li>
+                <li>
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#screens">Screens</a>
+                </li>
+              </ul> <!-- end menu -->
 
-					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-					</button>
+              <div class="nav__btn-holder">
+                <a href="#" class="btn btn--sm btn--color rounded"><span>Download</span></a>
+              </div>
+            </nav> <!-- end nav-wrap -->
 
-					<div class="pswp__caption">
-						<div class="pswp__caption__center"></div>
-					</div>
+        
+          </div> <!-- end flex-parent -->
+        </div> <!-- end container -->
 
-				  </div>
+      </div>
+    </header> <!-- end navigation -->
 
-			</div>
-		</div>
-		<!--/PhotoSwipe Popup-->
-		
-		<!-- Scripts -->
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/jquery-ui.min.js"></script>
-		<script src="js/angular.min.js"></script>
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/cbpSplitLayout.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/controllers.js"></script>
-		<script src="js/notifyMe.js"></script>
-		<script src="js/jquery.placeholder.js"></script>
-		<script src="js/photoswipe.min.js"></script>
-		<script src="js/photoswipe-ui-default.min.js"></script>
-		<script src="js/modernizr-2.6.2.min.js"></script>
-		<script src="js/jquery.nicescroll.js"></script>
-		<script src="js/jquery.countdown.js"></script>
-		<script src="js/typed.js"></script>
-		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxXt2P7-U38bK0xEFIT-ebZJ1ngK8wjww"></script> -->
-		<script src="js/init.js"></script>
-		
-	</body>
+
+    <div class="content-wrapper oh">
+
+      <!-- Hero -->
+      <section class="hero bg-gradient bg-gradient--1 white-text">
+
+        <!-- SVG Wave -->
+        <svg version="1.1" class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 152.8" enable-background="new 0 0 1920 152.8" xml:space="preserve">
+          <path class="wave-path" d="M1,152.4v-61c0,0,257.3,56.4,431,44c260.8-18.7,490.2-63.1,647-97c496.4-107.3,842,42,842,42v72H1z"/>
+        </svg>
+
+        <div class="container hero__container hero__container--720">
+
+          <div class="row hero__outer flex-vertical-align-center">
+            <div class="col-lg-5 col-md-7 text-center hidden-sm hidden-xs">
+              <img src="img/hero/iphone_app.png" class="hero__img--mt-210" alt="">
+            </div>
+            <div class="col-lg-6 col-md-5">
+              <h1 class="hero__title hero--boxed">Build the amazing app that everyone will love</h1>
+              <p class="hero__subtitle">An idea that takes the parts of a structure and turns whole system. Practice is the frequent and continued contemplation of the mode of executing any given work.</p>
+              <div class="hero__btn-holder mt-30">
+                <a href="#" class="btn btn--lg btn--transparent rounded"><span>Learn More</span></a>
+                <a href="#" class="btn btn--lg btn--color btn--icon rounded"><span><i class="ui-apple"></i>Download app</span></a>
+              </div>                  
+            </div>
+          </div>              
+         
+        </div>
+      </section> <!-- end hero -->
+
+
+      <!-- Promo Section -->
+      <section class="section-wrap promo-section pt-200 pt-md-100">
+        <div class="container">
+          <div class="row flex-parent flex-vertical-align-center flex-sm-collapse">
+            <div class="col-md-5 col-sm-12 mb-md-40">
+              <div class="promo-section__description">
+                <h2 class="promo-section__title">Intuitive interface for collaboration</h2>
+                <p class="lead mb-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                <a href="#" class="btn btn--lg btn--color btn--icon rounded"><span><i class="ui-apple"></i>Download app</span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-offset-1 col-sm-12">
+              <img src="img/promo/3.jpg" alt="" class="promo-section__img">
+            </div>
+          </div>
+        </div>
+      </section> <!-- end promo section -->
+
+
+      <!-- Video -->
+      <section class="section-wrap video-section bg-img" style="background-image: url(img/video/video_bg.jpg);">
+        <div class="container text-center">
+          <a href="https://www.youtube.com/watch?v=nVzVohG304A?autoplay=1" class="play-btn icon-wave single-video-lightbox"></a>
+        </div>
+      </section> <!-- end video-section -->
+
+
+      <!-- Feature -->
+      <section class="section-wrap bottom-divider" id="features">
+        <div class="container">
+          <div class="row flex-parent flex-vertical-align-center flex-sm-collapse">
+
+            <div class="col-sm-4 mb-sm-40">
+              <div class="feature text-center mb-60">
+                <a href="#" class="feature__icon-holder">
+                  <i class="ui-layers feature__icon feature__icon--gradient-1"></i>
+                </a>
+                <div class="feature__text">
+                  <h3 class="feature__title">Well Documented</h3>
+                  <p class="feature__paragraph">Our Theme is a very slick and clean e-commerce template with endless possibilities.</p>
+                </div>
+              </div> <!-- end feature item -->
+
+              <div class="feature text-center">
+                <a href="#" class="feature__icon-holder">
+                  <i class="ui-pencil-ruler feature__icon feature__icon--gradient-1"></i>
+                </a>
+                <div class="feature__text">
+                  <h3 class="feature__title">Tracking Sales</h3>
+                  <p class="feature__paragraph">Our Theme is a very slick and clean e-commerce template with endless possibilities.</p>
+                </div>
+              </div> <!-- end feature item -->
+            </div> <!-- end col -->
+
+            <div class="col-sm-4 mb-sm-40 text-center">
+              <img src="img/promo/iphone_app.png" alt="">
+            </div> <!-- end col -->
+
+            <div class="col-sm-4">
+              <div class="feature text-center mb-60">
+                <a href="#" class="feature__icon-holder">
+                  <i class="ui-fountain-pen-head-1 feature__icon feature__icon--gradient-1"></i>
+                </a>
+                <div class="feature__text">
+                  <h3 class="feature__title">Send Message</h3>
+                  <p class="feature__paragraph">Our Theme is a very slick and clean e-commerce template with endless possibilities.</p>
+                </div>
+              </div> <!-- end feature item -->
+
+              <div class="feature text-center">
+                <a href="#" class="feature__icon-holder">
+                  <i class="ui-microphone feature__icon feature__icon--gradient-1"></i>
+                </a>
+                <div class="feature__text">
+                  <h3 class="feature__title">Notifications</h3>
+                  <p class="feature__paragraph">Our Theme is a very slick and clean e-commerce template with endless possibilities.</p>
+                </div>
+              </div> <!-- end feature item -->
+            </div> <!-- end col -->
+
+          </div>
+        </div>
+      </section> <!-- end feature -->
+
+      
+      <!-- Testimonials -->
+      <section class="section-wrap bg-light bottom-divider" id="testimonials">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-6 mb-md-40">
+              <div class="testimonial box-shadow text-center clearfix">
+                <img src="img/testimonials/1.jpg" alt="" class="testimonial__img">
+                <div class="testimonial__body">
+                  <p class="testimonial__text">“I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat.”</p>
+                </div>
+                <div class="testimonial__info">
+                  <span class="testimonial__author">Christine Clark</span>
+                  <span class="testimonial__company">DeoThemes</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-md-6">
+              <div class="testimonial box-shadow text-center clearfix">
+                <img src="img/testimonials/2.jpg" alt="" class="testimonial__img">
+                <div class="testimonial__body">
+                  <p class="testimonial__text">“Every detail has been taken care these team are realy amazing and talented! I will work only with emaus agency.”</p>
+                </div>
+                <div class="testimonial__info">
+                  <span class="testimonial__author">Mark Zukerberg</span>
+                  <span class="testimonial__company">Facebook</span>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </section> <!-- end testimonials -->
+
+
+      <!-- Screens -->
+      <section class="section-wrap bottom-divider" id="screens">
+        <div class="container">
+          <div class="row">
+
+            <div id="owl-apps-slider" class="owl-carousel owl-theme text-center">
+              <img src="img/app_screens/1.jpg" alt="">
+              <img src="img/app_screens/2.jpg" alt="">
+              <img src="img/app_screens/3.jpg" alt="">
+              <img src="img/app_screens/4.jpg" alt="">
+            </div>
+
+          </div>
+        </div>
+      </section> <!-- end screens -->
+
+
+
+      <!-- CTA -->
+      <section class="section-wrap bg-light bottom-divider">
+        <div class="container text-center">
+
+          <div class="heading-row">
+            <h2 class="heading">Get the app that suits you</h2>
+          </div>
+
+          <div class="btn__holder">
+            <a href="#" class="btn btn--x-large btn--icon btn--google">
+              <i class="ui-android"></i><span>Google Play</span>
+            </a>
+            <a href="#" class="btn btn--x-large btn--icon btn--apple">
+              <i class="ui-apple"></i><span>App Store</span>
+            </a>
+            <a href="#" class="btn btn--x-large btn--icon btn--windows">
+              <i class="ui-windows"></i><span>Windows Store</span>
+            </a>
+          </div>
+          
+        </div>
+      </section> <!-- end CTA -->
+
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__widgets">
+            <div class="row">
+
+              <div class="col-md-4 col-sm-3 col-xs-12">
+                <div class="widget footer__about-us">
+                  <img src="img/logo_dark.png" alt="" class="logo">
+                  <div class="footer__socials mt-40">
+                    <div class="social-icons social-icons--nobase">
+                      <a href="#"><i class="ui-twitter"></i></a>
+                      <a href="#"><i class="ui-facebook"></i></a>
+                      <a href="#"><i class="ui-linkedin"></i></a>
+                      <a href="#"><i class="ui-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end about us -->
+
+
+              <div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-12">
+                <div class="widget widget-links">
+                  <h5 class="widget-title">Product</h5>
+                  <ul class="list-no-dividers">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-3 col-xs-12">
+                <div class="widget widget-links">
+                  <h5 class="widget-title">Support</h5>
+                  <ul class="list-no-dividers">                  
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Support Policy</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li><a href="#">Privacy &amp; Terms</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-3 col-xs-12">
+                <div class="widget widget-links">
+                  <h5 class="widget-title">Company</h5>
+                  <ul class="list-no-dividers">
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>           
+
+            </div>
+          </div>    
+        </div> <!-- end container -->
+
+        <div class="footer__bottom top-divider">
+          <div class="container text-center">
+            <span class="copyright">
+              &copy; 2017 Emaus, Made by <a href="https://deothemes.com">DeoThemes</a>
+            </span>
+          </div>
+        </div> <!-- end footer bottom -->
+      </footer> <!-- end footer -->
+
+
+      <div id="back-to-top">
+        <a href="#top"><i class="ui-arrow-up"></i></a>
+      </div>
+
+    </div> <!-- end content wrapper -->
+  </main> <!-- end main wrapper -->
+  
+
+  <!-- jQuery Scripts -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>  
+  <script type="text/javascript" src="js/scripts.js"></script>
+    
+</body>
 </html>
